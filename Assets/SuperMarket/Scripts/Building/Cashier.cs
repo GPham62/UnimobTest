@@ -123,11 +123,11 @@ namespace Model
                 m_moneyInCashier = totalMoneyInCashier;
                 sequence.OnComplete(() => {
                     customer.isHappy = true;
+                    //process next customer
+                    ProcessNextCustomer();
+                    m_isHandlingCustomer = false;
                 });
 
-                //process next customer
-                ProcessNextCustomer();
-                m_isHandlingCustomer = false;
             });
         }
 

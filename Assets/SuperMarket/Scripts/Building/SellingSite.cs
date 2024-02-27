@@ -58,7 +58,7 @@ namespace Model
         private void BuildSite()
         {
             Building newBuilding = ObjectPoolManager.SpawnObject(m_config.buildingPrefab, m_spawnPos.position, Quaternion.identity).GetComponent<Building>();
-            GameManager.instance.Rebake();
+            //GameManager.instance.Rebake();
             if (newBuilding is TomatoTable)
                 GameManager.instance.AddToTomatoTableList((TomatoTable)newBuilding);
         }
