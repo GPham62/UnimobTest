@@ -933,7 +933,7 @@ MonoBehaviour:
   m_despawnTrans: {fileID: 252710741}
   m_spawnIntervalMin: 1
   m_spawnIntervalMax: 1.5
-  m_maxCustomers: 1
+  m_maxCustomers: 4
   m_isRunning: 0
 --- !u!1 &1324895637
 GameObject:
